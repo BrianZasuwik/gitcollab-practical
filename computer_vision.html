@@ -4,30 +4,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Computer vision</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg" style="border: 1px solid #d3d3d3; background-color: #f5f5f5; box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 0.5rem 1rem;">
         <div class="container-fluid">
-    
+            <a class="navbar-brand " href="#">Positive Computing Contributions</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="ai_industry.html">AI</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Disability aids</a>
+                    <a class="nav-link" href="disabilityaids.html">Disability aids</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="computer_vision.html">Computer visions</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Record keeping</a>
+                    <a class="nav-link" href="RecordKeeping.html">Record keeping</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Environmental aids</a>
+                    <a class="nav-link" href="nature.html">Environmental aids</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Encryption</a>
                     </li>
                 </ul>
             </div>
@@ -38,6 +43,25 @@
             
             <div class="lead mb-4">
                 Computer vision — the AI field that teaches machines to "see" and interpret images/video — is already improving public health, accessibility, food security, conservation, disaster response, recycling and more. Below I list the major impact areas, a short concrete example for each, and the most reliable sources supporting those claims.
+            </div>
+            
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="CV-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="CV-2.png" alt="Second slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
             <h2 class="mb-3">How CV is helping (by sector)</h2>
@@ -74,7 +98,7 @@
                 </div>
 
                 <div class="card mb-3">
-                    <div class="card-body ">
+                    <div class="card-body bg-warning text-dark">
                         <h3 class="h5">5. Disaster response & humanitarian aid</h3>
                         <p>Satellite and aerial imagery processed with CV models help map floods, earthquakes and fires quickly so responders can prioritise aid and estimate damage. Several projects have demonstrated faster, actionable assessments during real disasters.</p>
                         
@@ -82,7 +106,7 @@
                 </div>
 
                 <div class="card mb-3">
-                    <div class="card-body">
+                    <div class="card-body bg-info text-white">
                         <h3 class="h5">6. Circular economy & recycling</h3>
                         <p>CV-guided robots and sorting lines identify and pick recyclable materials (plastics, metals) with higher purity than manual sorting — increasing recycling rates and reducing landfill waste. Commercial deployments and startups are scaling this tech.</p>
                         
@@ -90,7 +114,7 @@
                 </div>
 
                 <div class="card mb-3">
-                    <div class="card-body">
+                    <div class="card-body bg-dark text-white">
                         <h3 class="h5">7. Infrastructure and public safety</h3>
                         <p>CV systems inspect roads, bridges, and buildings (crack detection, structural damage) to prioritize maintenance and prevent failures — saving money and improving safety.</p>
                         
@@ -124,18 +148,14 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <p>Automating camera-trap and drone footage with CV greatly reduces manual annotation workload, enabling larger, continuous wildlife monitoring programs and aiding anti-poaching efforts.</p>
-                        <div class="sources">
-                            <span class="badge bg-secondary">Frontiers +1</span>
-                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="card mb-3">
                     <div class="card-body">
                         <p>CV is being deployed in recycling and waste-sorting at scale, increasing sorting speed and material purity, with recent commercial rollouts and recognition in mainstream press.</p>
-                        <div class="sources">
-                            <span class="badge bg-secondary">Axios +1</span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -146,9 +166,7 @@
                     <div class="card-body">
                         <h3 class="h5">Bias / data limitations</h3>
                         <p>CV models can underperform on underrepresented populations or environments unless trained on diverse data; real-world validation is essential.</p>
-                        <div class="sources">
-                            <span class="badge bg-secondary">BioMed Central +1</span>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -156,9 +174,7 @@
                     <div class="card-body">
                         <h3 class="h5">Human-in-the-loop</h3>
                         <p>Many deployments use CV to assist professionals (triage, pre-screening) rather than fully replace expert judgment.</p>
-                        <div class="sources">
-                            <span class="badge bg-secondary">PMC</span>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -169,37 +185,16 @@
                     </div>
                 </div>
             </div>
-
-            <h2 class="mb-3 mt-5">Further Reading & Primary Sources</h2>
-            <div class="further-reading">
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Systematic reviews / medical evidence on retinal screening and AI: PubMed / NCBI articles
-                        <span class="badge bg-secondary">PMC +1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Precision agriculture and plant disease detection (2024–2025 reviews)
-                        <span class="badge bg-secondary">ScienceDirect +1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Accessibility & assistive devices coverage (news + ACM research)
-                        <span class="badge bg-secondary">The Verge +1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Conservation & camera-trap automation: Frontiers / Conservation AI / research articles
-                        <span class="badge bg-secondary">Frontiers +1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Waste-sorting and recycling robotics (industry case studies, news coverage)
-                        <span class="badge bg-secondary">Axios +1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Disaster mapping from satellites and CV: AP news case study + academic disaster CV papers
-                        <span class="badge bg-secondary">AP News +1</span>
-                    </li>
-                </ul>
-            </div>
         </div>
+
+            <h2 class="mb-3 mt-5">Connect</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="h5">LinkedIn</h3>
+                    <p>Connect with me on LinkedIn:</p>
+                    <a href="https://www.linkedin.com/in/nopparut-rukkha-anankul-798a22373" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View LinkedIn profile</a>
+                </div>
+            </div>
 
         <style>
             .badge {
@@ -215,6 +210,4 @@
         </style>
     </body>
 </html>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
