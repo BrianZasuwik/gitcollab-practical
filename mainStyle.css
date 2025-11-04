@@ -23,3 +23,14 @@ Wrap images in a .img-wrapper to apply the min-height while preserving aspect ra
     /* on larger screens allow images to grow naturally but keep min-height */
     .img-wrapper { min-height: 180px; }
 }
+
+.badge {
+    font-size: 0.8rem;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.sources {
+    margin-top: 10px;
+}
